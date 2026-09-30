@@ -1,0 +1,20 @@
+{
+  "id": "cx:demo:b7c25e93:assignment:1",
+  "type": "assignment",
+  "title": "DNA 与遗传 · 随堂测验",
+  "description": "3 道选择题检验你对 DNA 结构与功能掌握程度。答错没关系——公共资源支持无限重试，每道题都有解析。",
+  "subjectArea": "biological-sciences",
+  "backgroundKnowledge": "some",
+  "learningObjectives": [
+    "应用碱基互补配对原则解题",
+    "区分 DNA 复制的方式",
+    "定义基因的概念"
+  ],
+  "tags": ["DNA", "测验", "遗传学"],
+  "durationMinutes": 8,
+  "license": "CC_BY_4",
+  "authors": [{ "name": "OpenLab 编辑团队", "org": "demo" }],
+  "organization": "demo",
+  "maxAttempts": null,
+  "publishedAt": "2026-09-01"
+}

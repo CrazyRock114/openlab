@@ -1,0 +1,20 @@
+{
+  "id": "cx:demo:7c13cc95:lx_simulation:1",
+  "type": "lx_simulation",
+  "title": "凝胶电泳虚拟实验",
+  "description": "在浏览器里完成一次真实的凝胶电泳：载入 DNA 样本、调节电压、观察条带按片段大小分离，并与 Marker 对照读出结果。试错零成本，随时重做。",
+  "subjectArea": "biological-sciences",
+  "backgroundKnowledge": "some",
+  "learningObjectives": [
+    "理解凝胶电泳按片段大小分离 DNA 的原理",
+    "学会对照 Marker 泳道估算未知片段大小",
+    "解释电压对迁移速度的影响"
+  ],
+  "tags": ["凝胶电泳", "实验技能", "分子生物学"],
+  "durationMinutes": 20,
+  "license": "CC_BY_4",
+  "authors": [{ "name": "OpenLab 实验团队", "org": "demo" }],
+  "organization": "demo",
+  "sim": "gel-electrophoresis",
+  "publishedAt": "2026-09-05"
+}

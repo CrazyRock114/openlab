@@ -1,0 +1,20 @@
+{
+  "id": "cx:demo:8e4d2f61:video:1",
+  "type": "video",
+  "title": "免疫系统是如何保卫你的？",
+  "description": "一段生动的动画短片，讲解当病原体入侵时，先天免疫与适应性免疫系统如何协同作战。",
+  "subjectArea": "health-science",
+  "backgroundKnowledge": "none",
+  "learningObjectives": [
+    "区分先天免疫与适应性免疫",
+    "描述白细胞识别并消灭病原体的过程",
+    "理解抗体在免疫记忆中的作用"
+  ],
+  "tags": ["免疫", "视频", "入门"],
+  "durationMinutes": 6,
+  "license": "CC_BY_NC_4",
+  "authors": [{ "name": "Kurzgesagt（嵌入演示）" }],
+  "organization": "demo",
+  "videoUrl": "https://www.youtube.com/watch?v=zQGOcOUBi6s",
+  "publishedAt": "2026-08-15"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "cx:demo:3f9a1c27:lx_text:1",
+  "type": "lx_text",
+  "title": "DNA：生命的说明书",
+  "description": "用图文方式了解 DNA 的双螺旋结构、碱基配对原则，以及它如何指导生命的运转。",
+  "subjectArea": "biological-sciences",
+  "backgroundKnowledge": "none",
+  "learningObjectives": [
+    "说出 DNA 双螺旋结构的基本特点",
+    "理解碱基互补配对原则（A–T、G–C）",
+    "解释 DNA 如何储存并传递遗传信息"
+  ],
+  "tags": ["DNA", "分子生物学", "入门"],
+  "durationMinutes": 10,
+  "license": "CC_BY_4",
+  "authors": [{ "name": "OpenLab 编辑团队", "org": "demo" }],
+  "organization": "demo",
+  "publishedAt": "2026-08-01"
+}

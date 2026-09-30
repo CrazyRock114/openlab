@@ -1,0 +1,7 @@
+{
+  "id": "cx-cluster:biology-core",
+  "title": "生物核心概念",
+  "description": "围绕生命科学核心主题组织的路径合集，适合作为一学期课程的骨架或自主学习的地图。",
+  "tags": ["生物学", "核心概念", "入门"],
+  "pathways": ["cx-pathway:9d2e7f30-1a4b-4c8d-9e2f-3a5b6c7d8e9f"]
+}

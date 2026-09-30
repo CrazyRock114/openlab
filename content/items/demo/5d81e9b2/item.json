@@ -1,0 +1,19 @@
+{
+  "id": "cx:demo:5d81e9b2:lx_text:1",
+  "type": "lx_text",
+  "title": "如何设计一个对照实验",
+  "description": "从「弯道超车还是匀速更省油」这类生活问题出发，学会用对照组、单一变量和可重复性设计一个站得住脚的科学实验。",
+  "subjectArea": "scientific-process",
+  "backgroundKnowledge": "none",
+  "learningObjectives": [
+    "说出对照实验的三个核心要素：对照组、单一变量、可重复",
+    "识别生活与媒体中常见的无对照结论陷阱",
+    "为给定的科学问题设计简单的对照实验方案"
+  ],
+  "tags": ["实验设计", "科学方法", "对照实验", "入门"],
+  "durationMinutes": 12,
+  "license": "CC_BY_4",
+  "authors": [{ "name": "OpenLab 编辑团队", "org": "demo" }],
+  "organization": "demo",
+  "publishedAt": "2026-09-12"
+}

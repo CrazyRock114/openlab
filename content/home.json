@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "欢迎来到开放科学课堂",
+    "subtitle": "在浏览器里做实验、刷题、沿路径系统学习——所有内容免费开放，无需注册账号。",
+    "primaryCta": { "label": "探索资料库", "href": "/library" },
+    "secondaryCta": { "label": "查看学习路径", "href": "/library/pathways" }
+  },
+  "featured": [
+    {
+      "title": "编辑精选",
+      "itemIds": [
+        "cx:demo:7c13cc95:lx_simulation:1",
+        "cx:demo:8e4d2f61:video:1",
+        "cx:demo:b7c25e93:assignment:1",
+        "cx:demo:3f9a1c27:lx_text:1"
+      ]
+    }
+  ],
+  "highlightPathwayId": "cx-pathway:9d2e7f30-1a4b-4c8d-9e2f-3a5b6c7d8e9f"
+}

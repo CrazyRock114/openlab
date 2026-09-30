@@ -1,0 +1,29 @@
+{
+  "id": "cx-pathway:9d2e7f30-1a4b-4c8d-9e2f-3a5b6c7d8e9f",
+  "title": "遗传学入门：从 DNA 到实验",
+  "description": "一条为零基础学习者设计的入门路径：先读懂 DNA 是什么，再通过视频建立直觉，用测验检验理解，最后在虚拟实验里亲手分离 DNA 片段。",
+  "learningObjectives": [
+    "建立 DNA 结构与功能的整体图景",
+    "掌握碱基互补配对原则并能应用",
+    "初步掌握凝胶电泳的原理与结果判读"
+  ],
+  "language": "zh-hans",
+  "license": "CC_BY_4",
+  "authors": [{ "name": "OpenLab 编辑团队" }],
+  "entries": [
+    {
+      "itemId": "cx:demo:3f9a1c27:lx_text:1"
+    },
+    {
+      "itemId": "cx:demo:8e4d2f61:video:1",
+      "educatorNotes": "视频为动画演示，节奏较快；建议学生先完成第一篇图文再观看，看到「抗体」一词时可以暂停讨论。"
+    },
+    {
+      "itemId": "cx:demo:b7c25e93:assignment:1",
+      "educatorNotes": "作为随堂检查使用，建议要求答对全部 3 题后再进入虚拟实验。公共模式下无限重试，布置后可限制为最多 2 次尝试。"
+    },
+    {
+      "itemId": "cx:demo:7c13cc95:lx_simulation:1"
+    }
+  ]
+}

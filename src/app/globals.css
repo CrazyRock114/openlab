@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Noto Sans SC", sans-serif;
+
+  --color-brand-50: #eff4ff;
+  --color-brand-100: #dce7fd;
+  --color-brand-200: #c0d4fc;
+  --color-brand-300: #94b7f9;
+  --color-brand-400: #6293f4;
+  --color-brand-500: #3b72ee;
+  --color-brand-600: #2456e0;
+  --color-brand-700: #1d44b8;
+  --color-brand-800: #1c3a92;
+  --color-brand-900: #1b3473;
+
+  --color-ink-800: #12264a;
+  --color-ink-900: #0b1b33;
+}
+
+html {
+  scroll-behavior: smooth;
+}
