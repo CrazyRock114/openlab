@@ -209,7 +209,8 @@ export default async function ItemPage({
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        // < 转义为 \u003c：防止内容字段含 </script> 时提前闭合标签（疫苗：内容字段理论可信但仍加固）
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
     </div>
   );

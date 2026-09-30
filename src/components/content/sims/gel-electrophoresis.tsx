@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Dna, Play, RotateCcw, TestTube } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -46,6 +46,13 @@ export function GelElectrophoresis() {
   const [voltage, setVoltage] = useState(80);
   const timer = useRef<number | null>(null);
   const duration = Math.round(5600 - voltage * 35); // 40V≈4.2s · 120V≈1.4s
+
+  /* 卸载时清理电泳定时器，避免对已卸载组件 setState */
+  useEffect(() => {
+    return () => {
+      if (timer.current) window.clearTimeout(timer.current);
+    };
+  }, []);
 
   const run = () => {
     setStage("running");

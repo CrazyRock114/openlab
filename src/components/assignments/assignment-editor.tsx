@@ -53,9 +53,10 @@ export function AssignmentEditor({ items, quizTotals = {} }: { items: Item[]; qu
       .then((found) => setDraft(found ?? blankAssignment()));
   }, []);
 
-  /* 自动保存 */
+  /* 自动保存；全空草稿不落库，避免幽灵记录 */
   useEffect(() => {
     if (!draft) return;
+    if (!draft.title.trim() && !draft.teacherName.trim() && draft.items.length === 0) return;
     const t = window.setTimeout(async () => {
       const db = getDB();
       if (!db) return;

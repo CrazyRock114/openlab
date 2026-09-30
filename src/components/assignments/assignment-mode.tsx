@@ -35,14 +35,21 @@ export function AssignmentModeProvider({ itemId, children }: { itemId: string; c
   const [assignment, setAssignment] = useState<AssignmentRecord | null>(null);
 
   useEffect(() => {
+    // 依赖 itemId：详情页间客户端导航时重新读取 ?a=（否则沿用上一个资源的作业上下文）
     const a = new URLSearchParams(window.location.search).get("a");
-    if (!a) return;
-    void getDB()
-      ?.assignments.get(a)
-      .then((rec) => {
-        if (rec) setAssignment(rec);
-      });
-  }, []);
+    const db = getDB();
+    if (!a || !db) {
+      setAssignment(null);
+      return;
+    }
+    let cancelled = false;
+    void db.assignments.get(a).then((rec) => {
+      if (!cancelled) setAssignment(rec ?? null);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [itemId]);
 
   const itemCfg = assignment?.items.find((i) => i.itemId === itemId);
   const active = Boolean(assignment && itemCfg);

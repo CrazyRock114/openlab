@@ -366,7 +366,8 @@ export function LibraryBrowser({ items }: { items: Item[] }) {
       <div className="mt-4 flex flex-wrap gap-2">
         {(() => {
           const typeOptions = facets.type;
-          const total = items.length;
+          // 「全部」计数 = 当前搜索约束下的总数（与 facets 计数口径一致）
+          const total = baseMatched.length;
           return (
             <>
               <button

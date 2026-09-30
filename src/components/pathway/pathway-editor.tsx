@@ -64,9 +64,10 @@ export function PathwayEditor({ items }: { items: Item[] }) {
     void run();
   }, []);
 
-  /* 自动保存（防抖）+ 首次保存后同步 URL */
+  /* 自动保存（防抖）+ 首次保存后同步 URL；全空草稿不落库，避免幽灵记录 */
   useEffect(() => {
     if (!draft) return;
+    if (!draft.title.trim() && !draft.description.trim() && draft.entries.length === 0) return;
     const t = window.setTimeout(async () => {
       const db = getDB();
       if (!db) return;
