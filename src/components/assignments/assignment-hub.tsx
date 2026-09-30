@@ -82,15 +82,19 @@ export function AssignmentHub({ items }: { items: Item[] }) {
     const db = getDB();
     if (!db) return;
     const now = Date.now();
+    const assignmentId = file.assignmentId ?? `cx-assignment:${crypto.randomUUID()}`;
+    // 教师自导入测试（同 ID 已存在 created 记录）时保留 created 身份，
+    // 避免「我布置的」卡片被覆盖消失；学生机器上无记录 → 照常 imported
+    const existing = await db.assignments.get(assignmentId);
     await db.assignments.put({
-      assignmentId: file.assignmentId ?? `cx-assignment:${crypto.randomUUID()}`,
-      role: "imported",
+      assignmentId,
+      role: existing?.role === "created" ? "created" : "imported",
       title: file.title,
       teacherName: file.teacherName,
       description: file.description,
       dueDate: file.dueDate,
       items: file.items,
-      createdAt: now,
+      createdAt: existing?.createdAt ?? now,
       updatedAt: now,
     });
     setPasteText("");
@@ -187,6 +191,14 @@ export function AssignmentHub({ items }: { items: Item[] }) {
             )}
             {isTeacher && (
               <>
+                {a.items[0] && (
+                  <Link
+                    href={`/library/items/${a.items[0].itemId}/?a=${encodeURIComponent(a.assignmentId)}`}
+                    className="rounded-lg bg-brand-600 px-3.5 py-1.5 text-sm font-semibold text-white transition hover:bg-brand-700"
+                  >
+                    开始学习
+                  </Link>
+                )}
                 <Link
                   href={`/assignments/new/?id=${encodeURIComponent(a.assignmentId)}`}
                   className="rounded-lg border px-3 py-1.5 text-sm font-medium text-slate-600 transition hover:border-brand-300 hover:text-brand-700"
