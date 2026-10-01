@@ -62,6 +62,9 @@ export default function PathwaysPage() {
                 <div className="min-w-0">
                   <h3 className="font-semibold transition group-hover:text-brand-700">{c.title}</h3>
                   <p className="mt-0.5 truncate text-sm text-slate-500">{c.description}</p>
+                  <p className="mt-1 text-xs text-slate-400">
+                    {c.pathways.length} 条路径 · {c.tags.slice(0, 3).join(" / ")}
+                  </p>
                 </div>
                 <ChevronRight className="ml-auto h-5 w-5 shrink-0 text-slate-300" />
               </Link>
