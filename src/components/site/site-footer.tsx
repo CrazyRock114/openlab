@@ -22,7 +22,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2.5 text-sm">
             <li><Link href="/library" className="transition hover:text-white">资料库</Link></li>
             <li><Link href="/library/pathways" className="transition hover:text-white">学习路径</Link></li>
-            <li><Link href="/library/clusters/biology-core" className="transition hover:text-white">群集</Link></li>
+            <li><Link href="/library/clusters/cx-cluster:biology-core" className="transition hover:text-white">群集</Link></li>
           </ul>
         </div>
 
